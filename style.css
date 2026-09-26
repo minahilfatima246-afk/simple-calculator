@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  }
+
+body {
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background: linear-gradient(135deg, #667eea, #764ba2);
+padding: 20px;
+}
+
+.calculator {
+width: 380px;
+max-width: 100%;
+background: #181818;
+padding: 20px;
+border-radius: 25px;
+box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+.top-bar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+color: white;
+margin-bottom: 15px;
+}
+
+.top-bar h1 {
+font-size: 22px;
+}
+
+#themeBtn {
+width: 42px;
+height: 42px;
+border: none;
+border-radius: 50%;
+cursor: pointer;
+font-size: 18px;
+}
+
+.display {
+background: #0d0d0d;
+color: white;
+min-height: 110px;
+border-radius: 15px;
+padding: 15px;
+margin-bottom: 15px;
+text-align: right;
+overflow: hidden;
+}
+
+#previous {
+color: #888;
+font-size: 18px;
+min-height: 25px;
+}
+
+#current {
+font-size: 38px;
+font-weight: bold;
+word-wrap: break-word;
+}
+
+.buttons {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 10px;
+}
+
+.buttons button {
+height: 60px;
+border: none;
+border-radius: 15px;
+font-size: 20px;
+cursor: pointer;
+background: #292929;
+color: white;
+transition: 0.15s;
+}
+
+.buttons button:hover {
+transform: scale(1.04);
+background: #383838;
+}
+
+.buttons button:active {
+transform: scale(0.96);
+}
+
+.function {
+background: #444 !important;
+}
+
+.operator {
+background: #6c5ce7 !important;
+}
+
+.equals {
+background: #00b894 !important;
+grid-row: span 2;
+height: 130px !important;
+}
+
+.zero {
+grid-column: span 2;
+}
+
+.history {
+margin-top: 20px;
+color: white;
+position: relative;
+}
+
+.history h2 {
+font-size: 18px;
+margin-bottom: 10px;
+}
+
+.history ul {
+list-style: none;
+max-height: 130px;
+overflow-y: auto;
+}
+
+.history li {
+background: #292929;
+padding: 8px 10px;
+margin-bottom: 5px;
+border-radius: 8px;
+font-size: 14px;
+}
+
+.clear-history {
+position: absolute;
+right: 0;
+top: -5px;
+border: none;
+background: transparent;
+color: #ff7675;
+cursor: pointer;
+}
+
+.light-mode {
+background: linear-gradient(135deg, #74b9ff, #a29bfe);
+}
+
+.light-mode .calculator {
+background: #f5f5f5;
+}
+
+.light-mode .top-bar {
+color: #222;
+}
+
+.light-mode .display {
+background: white;
+color: #222;
+}
+
+.light-mode #current {
+color: #222;
+}
+
+.light-mode .buttons button {
+background: #e0e0e0;
+color: #222;
+}
+
+.light-mode .history {
+color: #222;
+}
+
+.light-mode .history li {
+background: #ddd;
+}
+
+@media (max-width: 450px) {
+.calculator {
+padding: 15px;
+}
+
+```
+.buttons {
+    gap: 7px;
+}
+
+.buttons button {
+    height: 55px;
+}
+
+.equals {
+    height: 117px !important;
+}
+```
+
+}
