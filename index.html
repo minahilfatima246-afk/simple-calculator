@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next-Level Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="calculator">
+
+```
+<div class="top-bar">
+    <h1>Calculator</h1>
+    <button id="themeBtn" onclick="toggleTheme()">☀️</button>
+</div>
+
+<div class="display">
+    <div id="previous"></div>
+    <div id="current">0</div>
+</div>
+
+<div class="buttons">
+
+    <button class="function" onclick="clearDisplay()">AC</button>
+    <button class="function" onclick="deleteLast()">DEL</button>
+    <button class="function" onclick="append('(')">(</button>
+    <button class="function" onclick="append(')')">)</button>
+
+    <button class="function" onclick="calculateFunction('sin')">sin</button>
+    <button class="function" onclick="calculateFunction('cos')">cos</button>
+    <button class="function" onclick="calculateFunction('tan')">tan</button>
+    <button class="operator" onclick="append('/')">÷</button>
+
+    <button class="function" onclick="calculateFunction('sqrt')">√</button>
+    <button class="function" onclick="calculateFunction('square')">x²</button>
+    <button class="function" onclick="calculatePercentage()">%</button>
+    <button class="operator" onclick="append('*')">×</button>
+
+    <button onclick="append('7')">7</button>
+    <button onclick="append('8')">8</button>
+    <button onclick="append('9')">9</button>
+    <button class="operator" onclick="append('-')">−</button>
+
+    <button onclick="append('4')">4</button>
+    <button onclick="append('5')">5</button>
+    <button onclick="append('6')">6</button>
+    <button class="operator" onclick="append('+')">+</button>
+
+    <button onclick="append('1')">1</button>
+    <button onclick="append('2')">2</button>
+    <button onclick="append('3')">3</button>
+    <button class="equals" onclick="calculate()">=</button>
+
+    <button class="zero" onclick="append('0')">0</button>
+    <button onclick="append('.')">.</button>
+
+</div>
+
+<div class="history">
+    <h2>History</h2>
+    <button class="clear-history" onclick="clearHistory()">Clear History</button>
+    <ul id="historyList"></ul>
+</div>
+```
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+  
